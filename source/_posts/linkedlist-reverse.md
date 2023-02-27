@@ -20,9 +20,7 @@ tags:
 ``` java
 
 class LinkedList {
-    Node aa
-    Node bb
-    CC acc
+    Sysytem.out.println("lalal")
 }
 
 ```
