@@ -10,7 +10,7 @@ Queue is a linear list which order is first in and first out. we could define tw
 we could definded three varivables : front, rear, maxSize.
 Front and rear both from 0;if we add data to this queue, the rear would be added 1. And if we retrieve one data, the front will be added 1.
 the maxSize is the volume of the queue, it from front to rear.
-### 2.what variable tht we should acquire
+### 2.what variable that we should acquire
 According to this queue, we could search Valid data, and the value of rear and front.
 ### 3.method design
 (1)isEmpty: using this method could judge if this queue is Empty, which means if rear==front,the quque is Empty. 
@@ -19,6 +19,6 @@ According to this queue, we could search Valid data, and the value of rear and f
 (4)getQueue: using this method could return date which according the index which we could input this index as a parameters. Next step, the front will be added 1. However, before we add, we need to verify whether existing valid date by Isempty method.
 (5)showQueue: using this method could show all the date of this Queue. in this way, from front to rear. However, before show this queue, we need to verify whether existing some date in the queue.
 (6)size: using method could return the number of vaild date. by expression which is(rear+maxSize-front).
-
+(7)headQueue: using this method could reutrn first date by returning front.
 
 
