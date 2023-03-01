@@ -14,7 +14,7 @@
 <meta property="og:description" content="how to using array.Queue is a linear list which order is first in and first out. we could define two pointers to help us to Determine the front and rear positions. processing1.defined variablewe could">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-02-27T09:20:10.000Z">
-<meta property="article:modified_time" content="2023-03-01T03:21:49.328Z">
+<meta property="article:modified_time" content="2023-03-01T03:39:43.935Z">
 <meta property="article:author" content="Ju Run Zhi">
 <meta name="twitter:card" content="summary">
   
@@ -96,12 +96,14 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h1 id="how-to-using-array"><a href="#how-to-using-array" class="headerlink" title="how to using array."></a>how to using array.</h1><p>Queue is a linear list which order is first in and first out. we could define two pointers to help us to Determine the front and rear positions.</p>
-<h2 id="processing"><a href="#processing" class="headerlink" title="processing"></a>processing</h2><p>1.defined variable<br>we could definded three varivables : front, rear, maxSize.<br>Front and rear both from 0;if we add data to this queue, the rear would be added 1. And if we retrieve one data, the front will be added 1.<br>the maxSize is the volume of the queue, it from front to rear.<br>2.what variable tht we should acquire<br>According to this queue, we could search Valid data, and the value of rear and front.<br>3.method design<br>isEmpty: using this method could judge if this queue is Empty.<br>isFull: using this method could judge if this queue is full.<br>addQueue: using this method could add data to the queue, first we could use Isfull method to judge whether has space to store this date. Subsequently, storing the parameter which we input-this means arr[rear]&#x3D;parameter. Afterwards, the rear will be added 1.<br>getQueue: using this method could return date which according the index which we could input this index as a parameters. Next step, the front will be added 1. However, before we add, we need to verify whether existing valid date by Isempty method.<br>showQueue: using this method could show all the date of this Queue. in this way, from front to rear. However, before show this queue, we need to verify whether existing some date in the queue.</p>
+<h2 id="processing"><a href="#processing" class="headerlink" title="processing"></a>processing</h2><h3 id="1-defined-variable"><a href="#1-defined-variable" class="headerlink" title="1.defined variable"></a>1.defined variable</h3><p>we could definded three varivables : front, rear, maxSize.<br>Front and rear both from 0;if we add data to this queue, the rear would be added 1. And if we retrieve one data, the front will be added 1.<br>the maxSize is the volume of the queue, it from front to rear.</p>
+<h3 id="2-what-variable-tht-we-should-acquire"><a href="#2-what-variable-tht-we-should-acquire" class="headerlink" title="2.what variable tht we should acquire"></a>2.what variable tht we should acquire</h3><p>According to this queue, we could search Valid data, and the value of rear and front.</p>
+<h3 id="3-method-design"><a href="#3-method-design" class="headerlink" title="3.method design"></a>3.method design</h3><p>(1)isEmpty: using this method could judge if this queue is Empty, which means if rear&#x3D;&#x3D;front,the quque is Empty.<br>(2)isFull: using this method could judge if this queue is full, which means if (rear+1)%maxSize&#x3D;&#x3D;front, the queue is full.<br>(3)addQueue: using this method could add data to the queue, first we could use Isfull method to judge whether has space to store this date. Subsequently, storing the parameter which we input-this means arr[rear]&#x3D;parameter. Afterwards, the rear will be added 1.<br>(4)getQueue: using this method could return date which according the index which we could input this index as a parameters. Next step, the front will be added 1. However, before we add, we need to verify whether existing valid date by Isempty method.<br>(5)showQueue: using this method could show all the date of this Queue. in this way, from front to rear. However, before show this queue, we need to verify whether existing some date in the queue.<br>(6)size: using method could return the number of vaild date. by expression which is(rear+maxSize-front).</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rzju.github.io/2023/02/27/Array-simulate-queue/" data-id="clep433oz0000aaoq1ocxdnhv" data-title="Array_simulate_queue" class="article-share-link">Share</a>
+      <a data-url="https://rzju.github.io/2023/02/27/Array-simulate-queue/" data-id="clep4q6e80000hxok9bz9a8wf" data-title="Array_simulate_queue" class="article-share-link">Share</a>
       
       
       
