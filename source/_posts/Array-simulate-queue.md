@@ -22,7 +22,7 @@ According to this queue, we could search Valid data, and the value of rear and f
 (7)headQueue: using this method could reutrn first date by returning front.
 
 ## code implementation
-``` bash
+``` java
 public class CircleQueue {
     int front;
     int rear;
